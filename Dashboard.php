@@ -65,7 +65,7 @@ $conn->close();
       <a href="register.php"> <span class="material-symbols-outlined">app_registration</span><span>  Registration</span></a>
       <a href="checkin.php"><span class="material-symbols-outlined">check_in_out</span> Check In</a>
       <a href="checkout.php"><span class="material-symbols-outlined">check_in_out</span>   Check Out</a>
-      <a href="Settings.html"><span class="material-symbols-outlined">settings</span>   Settings</a>
+      <a href="account.php"><span class="material-symbols-outlined">settings</span>   Settings</a>
   </nav>
 <section>
   <h1>Check-In/Check-Out Log</h1>
