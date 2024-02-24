@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2;url=login.php">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .loading-logo {
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+            animation: rotate 5s linear infinite; /* Add rotation animation */
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="loading.gif" alt="Loading..." class="loading-logo">
+        <p>Please wait while you are being redirected to the login page...</p>
+    </div>
+</body>
+</html>
