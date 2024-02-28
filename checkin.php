@@ -160,7 +160,7 @@ $conn->close();
       <h1>Checking System</h1>
     </header>
     <br><br><br>
-      <a href="Dashboard.html"><span class="material-symbols-outlined"> home </span> Home</a>
+      <a href="Dashboard.php"><span class="material-symbols-outlined"> home </span> Home</a>
       <a href="register.php"> <span class="material-symbols-outlined">app_registration</span><span>  Registration</span></a>
       <a href="checkin.php"><span class="material-symbols-outlined">check_in_out</span> Check In</a>
       <a href="checkout.php"><span class="material-symbols-outlined">check_in_out</span>   Check Out</a>
@@ -171,8 +171,29 @@ $conn->close();
     <div class="form-heading">Check In</div>
     <form class="login-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
       <div class="form-group">
-        <label for="checkinName">Name:</label>
+        <label for="checkinName">Personal ID:</label>
         <input type="text" id="checkinName" name="checkinName" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Validate</button>
+    </div>
+    <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <div class="form-group">
+        <label for="CheckinVehicles">Choose a Device:</label>
+        <input type="checkbox" id="CheckinVehicles" name="CheckinVehicles" name="Vehicles">
+        <label for="vehicle1"> I have a hp</label><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a mac</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a lenovo</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a dell</label>
       </div>
       <div class="form-group">
         <label for="checkinDate">Date:</label>
