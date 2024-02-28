@@ -146,7 +146,7 @@ $conn->close();
       <h1>Checking System</h1>
     </header>
     <br><br><br>
-      <a href="Dashboard.html"><span class="material-symbols-outlined"> home </span> Home</a>
+      <a href="Dashboard.php"><span class="material-symbols-outlined"> home </span> Home</a>
       <a href="register.php"> <span class="material-symbols-outlined">app_registration</span><span>  Registration</span></a>
       <a href="checkin.php"><span class="material-symbols-outlined">check_in_out</span> Check In</a>
       <a href="checkout.php"><span class="material-symbols-outlined">check_in_out</span>   Check Out</a>
@@ -161,6 +161,11 @@ $conn->close();
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
               </div>
+              <label for="User_type">Choose user_type:</label>
+                <select id="User_type" name="cars">
+                  <option value="Administrator">Administrator</option>
+                  <option value="Check_in_user">Check in user</option>
+                </select>
               <div class="form-group">
                 <label for="Phone-number">Phone-number:</label>
                 <input type="Phone-number" id="Phone-number" name="Phone-number" required>

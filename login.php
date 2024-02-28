@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify password
         if (password_verify($input_password, $row['password'])) {
             // Password is correct, redirect user to dashboard or desired page
-            header("Location: Dashboard.html");
+            header("Location: Dashboard.php");
             exit();
         } else {
             // Password is incorrect, set error message
@@ -81,6 +81,7 @@ $conn->close();
       </div>
       <?php if ($error_message): ?>
       <div class="error-message"><?php echo $error_message; ?></div>
+      <input type="dropdown">
       <?php endif; ?>
       <div class="form-group">
         <button type="submit">Login</button>
