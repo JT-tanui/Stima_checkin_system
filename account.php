@@ -45,6 +45,17 @@ $conn->close();
 </head>
 <body>
     <h1>Account Page</h1>
+    <nav>
+    <header>
+      <h1>Checking System</h1>
+    </header>
+    <br><br><br>
+      <a href="Dashboard.php"><span class="material-symbols-outlined"> home </span> Home</a>
+      <a href="register.php"> <span class="material-symbols-outlined">app_registration</span><span>  Registration</span></a>
+      <a href="checkin.php"><span class="material-symbols-outlined">check_in_out</span> Check In</a>
+      <a href="checkout.php"><span class="material-symbols-outlined">check_in_out</span>   Check Out</a>
+      <a href="Settings.html"><span class="material-symbols-outlined">settings</span>   Settings</a>
+  </nav>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="username">New Username:</label><br>
         <input type="text" id="username" name="username" required><br><br>
