@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage </title>
+        <style>
+          body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(background2.jpg);
+            margin: 0;
+            padding: 0;
+          
+            
+          }
+      
+          header {
+            background-image: url(background2.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+          }
+      
+          nav {
+            display: flex;
+            background-image: url(background2.jpg);
+            justify-content: center;
+            padding: 10px 0;
+          }
+      
+          nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+          }
+      
+          section {
+            margin: 20px;
+          }
+      
+          .form-container {
+            background-image: url(background2.jpg);
+            text-align: center;
+            padding: 20px;
+            border: 1px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+      
+          .form-container img {
+            background-image: url(background2.jpg);
+            max-width: 100px;
+            margin-bottom: 20px;
+          }
+      
+          .form-heading {
+            background-image: url(background2.jpg);
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+      
+          .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-image: url(background2.jpg);
+          }
+      
+          .form-group {
+            margin-bottom: 15px;
+          }
+      
+          .form-group label {
+            display: block;
+            margin-bottom: 5px;
+          }
+      
+          .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+          }
+      
+          .form-group button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        </style>
+      </head>
+      <body>
+      
+        <header>
+          <h1>Checking System</h1>
+        </header>
+      
+        <nav>
+          <a href="homepage.html">Home</a>
+          <a href="register.html">Registration</a>
+          <a href="checkin.html">Check In</a>
+          <a href="checkout.html">Check Out</a>
+        </nav>
+        <section id="checkin" class="form-container">
+          <div class="form-heading">Check In</div>
+          <form class="login-form">
+            <div class="form-group">
+              <label for="checkinName">Name:</label>
+              <input type="text" id="checkinName" name="checkinName" required>
+            </div>
+            <div class="form-group">
+              <label for="checkinDate">Date:</label>
+              <input type="date" id="checkinDate" name="checkinDate" required>
+            </div>
+            <div class="form-group">
+              <button type="submit">Check In</button>
+            </div>
+          </form>
+        </section>
+</body>
+</html>

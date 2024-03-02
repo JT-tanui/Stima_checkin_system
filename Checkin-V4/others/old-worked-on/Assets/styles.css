@@ -1,0 +1,99 @@
+body {
+    display: flex; /* Split the body into two areas */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  nav {
+    flex: 1; /* Assign equal width to navigation bar */
+    background-color: #f0f0f0; /* Add background color */
+    padding: 1rem; /* Add some padding */
+  }
+  
+  aside {
+    flex: 1; /* Assign 3 times the width as the navigation bar for more content space */
+    background-image: url("https://images.unsplash.com/photo-1596109596838-890e026efe40?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-color: #f5f5f5; /* Add background color */
+    padding: 1rem; /* Add some padding */
+  }
+  
+  .login-container {
+    flex: 0.8; /* Assign remaining width for login container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    background-color: #fff; /* Add white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    padding: 2rem; /* Add more padding */
+  }
+  
+  .login-container img {
+    width: 100px; /* Adjust logo width */
+    height: 100px; /* Adjust logo height */
+  }
+  
+  .form-heading {
+    font-size: 24px; /* Increase heading size */
+    margin-bottom: 1rem; /* Add spacing below heading */
+  }
+  
+  .login-form {
+    width: 300px; /* Set form width */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add spacing between form elements */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px; /* Add spacing below label */
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #03138e; /* Green button color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* Indicate clickable element */
+    border-radius: 4px;
+  }
+  
+  .form-group button:hover {
+    background-color: #152eeb; /* Darker green on hover */
+  }
+  .form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    .form-signup button {
+        padding: 8px 16px;
+        border: none;
+        background-color:#03138e; /* Green button color */
+        color: white;
+        font-size: 16px;
+        cursor: pointer; /* Indicate clickable element */
+        border-radius: 4px;
+    }
+
+    .form-signup button:hover {
+        background-color:#152eeb; /* Darker green on hover */
+      }
