@@ -1,0 +1,40 @@
+<!DOCTYPEJS1 html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate PIN</title>
+</head>
+<body>
+    <form method="post">
+        <label for="staffNumberInput">Enter Staff Number:</label>
+        <input type="text" id="staffNumberInput" name="staffNumber" placeholder="Staff Number">
+
+        <button type="button" id="generatePinButton">Generate PIN</button>
+        <div id="pinDisplay"></div>
+
+        <script>
+	//this javascript is incomplete still needs some error handling but you can debug using the browser console
+            document.getElementById('generatePinButton').addEventListener('click', function() {
+                // Get staff number from input
+                const staffNumber = document.getElementById('staffNumberInput').value;
+
+                // Make a request to the PHP API with staff number
+                fetch('generate_pin.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'staffNumber=' + encodeURIComponent(staffNumber),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Display the generated PIN
+                    document.getElementById('pinDisplay').innerText = 'Generated PIN: ' + data.pin;
+                })
+               // .catch(error => console.error('Error:', error));
+            });
+        </script>
+    </form>
+</body>
+</html>

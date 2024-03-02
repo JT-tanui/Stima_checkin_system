@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/imgs/favicon.ico">
+    <title>Security checking - Checkin </title>
+    <link rel="stylesheet" href="Assets/style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="logo">
+                <h5>KPLC check-in<div class="ttl_"></div></h5>
+            </div>
+            <i id="btn" class="material-symbols-outlined"> menu</i>
+            <ul class="nav-links">
+                <li>
+                    <a href="home.html">
+                        <i class="material-symbols-outlined">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashborad.html">
+                        <i class="material-symbols-outlined">dashboard</i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="checkin.html">
+                        <i class="material-symbols-outlined">task_alt</i>
+                        <span>Checkin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="checkout.html">
+                        <i class="material-symbols-outlined">cancel</i>
+                        <span>Checkout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="material-symbols-outlined">app_registration</i>
+                        <span>Registration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                        <i class="material-symbols-outlined">account_circle</i>
+                        <span>Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="logout.php">
+                        <i class="material-symbols-outlined">logout</i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2> Check-in <br> </h2>
+            <hr>
+            <h2><br></h2>
+            <form action="/checkin" method="post">
+              <div class="form-group">
+                <label for="personal_id">Personal ID:</label>
+                <input type="text" class="form-control" id="personal_id" name="personal_id" required pattern="[0-9]{4}" title="Please enter a valid 4-digit personal ID">
+              </div>
+              <div class="form-group">
+                <label for="devices">Devices:</label>
+                <select multiple class="form-control" id="devices" name="devices[]">
+                  <!-- Loop through the registered devices and create an option for each one -->
+                  <option value="device1">Device 1</option>
+                  <option value="device2">Device 2</option>
+                  <!-- ... -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="vehicle">Vehicle:</label>
+                <select class="form-control" id="vehicle" name="vehicle">
+                  <!-- Loop through the registered vehicles and create an option for each one -->
+                  <option value="vehicle1">Vehicle 1</option>
+                  <option value="vehicle2">Vehicle 2</option>
+                  <!-- ... -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Check-in</button>
+            </form>
+        </div>
+    </main>
+    <!---For the main section provide the css and the javascript codes that relates to it.-->
+
+    <footer>
+
+    </footer>
+    <script src="Assets/script/script.js"></script>
+</body>
+</html>
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
