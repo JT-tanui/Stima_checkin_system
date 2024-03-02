@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    height: 130vh;
+    margin: 0;
+  }
+  
+  header {
+    border-radius: 30%;
+    text-align: center;
+    color: #cfd6f5;
+    padding: 1rem;
+    background-color: rgba(17, 14, 191, 0.663)
+  }
+  
+  nav {
+    position: relative;
+    flex: 0 0 20%; /* Set width to 20% of left side */
+    background-color: #2d24e5;
+    padding: 1rem;
+    transition: width 0.2s ease-in-out; /* Smooth width transition */
+  }
+
+nav i {
+    color: #ffffff; /* Adjust icon color */
+    font-size: 18px; /* Adjust icon size */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0.2,
+  'wght' 300,
+  'GRAD' 100,
+  'opsz' 24
+}
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:  #bfc6e7;
+  }
+  
+  nav a:hover {
+    border-radius: 10%;
+    background-color: #4f69d3;
+    transition: width 0.2s ease-in-out; /* Smooth width transition */
+  }
+  
+  main {
+    flex: 1; /* Use remaining space for main content */
+    display: flex;
+  }
+  
+  .login-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    /* Styling for login form elements goes here */
+  }
+  
+  .about {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    /* Styling for about section goes here */
+  }
+  
+  /* Include your specific styling for login form and about section as needed */
+  
+  /* You can remove the following code if you have your own styling */
+  .form-heading {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  

@@ -1,95 +1,153 @@
-body {
-    display: flex;
-    height: 130vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300&display=swap');
+* {
+    padding: 0;
     margin: 0;
-  }
-  
-  header {
-    border-radius: 30%;
-    text-align: center;
-    color: #cfd6f5;
-    padding: 1rem;
-    background-color: rgba(17, 14, 191, 0.663)
-  }
-  
-  nav {
-    position: relative;
-    flex: 0 0 20%; /* Set width to 20% of left side */
-    background-color: #2d24e5;
-    padding: 1rem;
-    transition: width 0.2s ease-in-out; /* Smooth width transition */
-  }
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-nav i {
-    color: #ffffff; /* Adjust icon color */
-    font-size: 18px; /* Adjust icon size */
-    margin-right: 5px; /* Adjust spacing between icon and text */
+.sidebar {
+    background-color:  #0967cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 105vh;
+    transition: all .3s ease ;
+    padding: 0.6rem 0.8rem;
 }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0.2,
-  'wght' 300,
-  'GRAD' 100,
-  'opsz' 24
+
+.logo h5 {
+    color:bisque;
+    font-size: 20px;
+    opacity: 0;
 }
-  
-  nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color:  #bfc6e7;
-  }
-  
-  nav a:hover {
-    border-radius: 10%;
-    background-color: #4f69d3;
-    transition: width 0.2s ease-in-out; /* Smooth width transition */
-  }
-  
-  main {
-    flex: 1; /* Use remaining space for main content */
-    display: flex;
-  }
-  
-  .login-container {
-    flex: 1;
-    background-color: #fff;
-    padding: 2rem;
-    /* Styling for login form elements goes here */
-  }
-  
-  .about {
-    flex: 1;
-    background-color: #f5f5f5;
-    padding: 2rem;
-    /* Styling for about section goes here */
-  }
-  
-  /* Include your specific styling for login form and about section as needed */
-  
-  /* You can remove the following code if you have your own styling */
-  .form-heading {
+
+.logo h5 span {
+    color: #fff;
+}
+.sidebar.active .logo h5 {
+    opacity: 1;
+}
+#btn {
+    position: absolute;
+    color: #fff;
     font-size: 24px;
-    margin-bottom: 1rem;
-  }
-  
-  .form-group {
+    top: 1rem;
+    left: 2.2rem;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.sidebar.active #btn {
+    top: 0.7rem;
+    left: 10rem;
+}
+.nav-links {
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.nav-links li {
+    position: relative;
+    height: 50px;
+    list-style-type: none;
+    margin: 0.8em auto;
+    width: 90%;
+
+}
+.nav-links a {
+    border-radius: 15px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+} 
+ .nav-links li span {
+    opacity: 0;
+}
+.sidebar.active .nav-links li span {
+    opacity: 1;
+}
+.nav-links li a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-links li a i {
+    min-width: 65px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+} 
+.sidebar.active {
+    width: 220px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Add a margin to the body and set a background color */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
   }
   
-  .form-group label {
-    font-size: 16px;
-    margin-bottom: 5px;
+  /* Style the container and set some padding */
+  .container {
+    right: 6px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .form-group input[type="text"],
-  .form-group input[type="password"] {
-    padding: 8px;
-    border: 1px solid #ccc;
+  /* Style the form elements */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
     border-radius: 4px;
-    font-size: 16px;
+    border: 1px solid #ccc;
   }
-  
+
+  /* Style the submit button */
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the select elements */
+select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px 18px;
+  padding-right: 40px;
+}
+
+/* Style the label elements */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
